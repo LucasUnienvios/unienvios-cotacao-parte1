@@ -9,5 +9,6 @@
             "homepage": "https://unienvios.com.br"
         }
     ],
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev"
 }
