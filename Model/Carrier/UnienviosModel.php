@@ -187,7 +187,7 @@ foreach($request->getAllItems() as $item){
 	$this->_curl->addHeader("Content-Type", "application/json");
 	$this->_curl->addHeader("email", $this->getReceipentEmail());
 	$this->_curl->addHeader("password", $this->getReceipentSenha());
-	$teste = $this->_curl->post("https://apihml.unienvios.com.br/external-integration/quotation/get-quotations", $parans); 
+	$teste = $this->_curl->post("https://api.unienvios.com.br/external-integration/quotation/get-quotations", $parans); 
         $result =$this->_curl->getBody();
 	$result = json_decode($result);
         
