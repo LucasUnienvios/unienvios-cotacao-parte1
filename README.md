@@ -1,14 +1,11 @@
-# Magento 2 - add a custom field in checkout shipping address 
+# Unienvios - Módulo 1
 
-Add a custom form fields to the checkout shipping address form fields and save the value into database - Magento 2
+Esse módulo, adiciona os métodos de envio no carrinho e no checkout da aplicação, adiciona também uma tab em Configurações->Vendas->Unienvios para que o admin insira as credenciais da API Unienvios. Além de adicionar os campos extras necessários (CPF, Número, Bairro, Complemento) no checkout, adiciona também atributos no formulario de cadastrado do produto para salvar as dimensões (Altura, Largura, Comprimento e Peso), e por último salva as informações no banco de dados, informações essas necessárias para a criação da cotação que será feita a chamada para a API no outro módulo complementar a esse. https://github.com/LucasUnienvios/unienvios-cotacao-parte2
 
 # Installation
 
-- Copy the content of the repo to the <b>app/code/Unienvios/Cotacao</b>
-- Run command: <b>php bin/magento setup:upgrade</b>
-- Run command: <b>php bin/magento setup:static-content:deploy </b>  (Use -f for force deploy on 2.2.x or later)
-- Now flush cache: <b>php bin/magento cache:flush</b>
-
-# Support
-
-If you encounter any problems or bugs, please <a href="https://github.com/magentodevblog/magento-2-add-a-custom-field-to-checkout-shipping/issues">open an issue</a> on GitHub.
+- Copie o conteúdo do repositório para <b>app/code/Unienvios/Cotacao</b>
+- Execute o comando: <b>php bin/magento setup:upgrade</b>
+- Execute o camando: <b>php bin/magento setup:static-content:deploy pt_BR en_US -f
+ </b>  (Use -f for force deploy on 2.2.x or later)
+- Agora limpe o cache: <b>php bin/magento cache:flush</b>
